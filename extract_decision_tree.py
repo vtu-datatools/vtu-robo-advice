@@ -35,14 +35,17 @@ def process_choice(raw_choice) -> ChoiceEdge:
         assist = as_[1].attrs["data-content"].strip()
     return ChoiceEdge(decision, link, assist)
 
-if __name__ == "__main__":
+def extract() -> [DecisionNode]:
+    decision_nodes = []
     for i in range (1, 45):
         with open(data_path.format(i), 'r') as f:
             html_doc = f.read()
 
         uri = "/contest/{}".format(i)
+        decision_nodes.append(process(uri, html_doc))
+    return decision_nodes
 
-        print("\nProcessing: {}".format(uri))
-        decision_node = process(uri, html_doc)
-        print(decision_node)
-
+if __name__ == "__main__":
+    decision_nodes = extract()
+    for dn in decision_nodes:
+        print(dn)
