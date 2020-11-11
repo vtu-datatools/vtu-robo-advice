@@ -1,22 +1,8 @@
-import csv
-from dataclasses import dataclass
-from typing import Optional
-
 from bs4 import BeautifulSoup
 
+from models import DecisionNode, ChoiceEdge
+
 data_path = "tenants-talk/{}.html"
-
-@dataclass
-class ChoiceEdge:
-    decision: str
-    link: str
-    assist: Optional[str]
-
-@dataclass
-class DecisionNode:
-    uri: str
-    prompt: str
-    choices: list[ChoiceEdge]
 
 def process(uri: str, html_doc: str) -> DecisionNode:
     soup = BeautifulSoup(html_doc, "html.parser")
