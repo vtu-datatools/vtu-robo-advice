@@ -6,6 +6,7 @@ Based on: https://tenants-talk.ca/contest
 ## Structure
 * `downloader.py`: Downloads the contents of https://tenants-talk.ca/contest/:id to `/tenants-talk`.
 * `extraction.py`: Extracts the decision tree encoded in the https://tenants-talk.ca/contest site.
+* `generator.py`: Generate json application configs from decision tree configurations.
 * `models.py`: Contains data models to represent a decision tree.
 * `processing.py`: Utilities for working with decision trees.
 * `render.py`: Utilities for rendering decision trees to the `*.dot` format.
