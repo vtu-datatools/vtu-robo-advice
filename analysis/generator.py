@@ -2,52 +2,67 @@ import csv
 from dataclasses import dataclass
 import json
 import hashlib
-from typing import Optional
+from typing import Any, Dict, List, Optional
 
-def h(s: str):
-  return hashlib.sha512(s.encode()).hexdigest()[0:6]
+URI = str
+NodeId = str
+Prompt = str
+Choice = str
+NodeLink = Optional[NodeId]
+ExternalLink = Optional[URI]
+
 
 @dataclass
 class Row:
-    uri: str
+    node_id: NodeId
     prompt: str
     choice: str
-    link: Optional[str]
+    node_link: Optional[NodeId]
+    external_link: Optional[URI]
     assist: Optional[str]
 
-rows: [Row] = []
-with open("trees/evictions_tree.tsv") as f:
-  reader = csv.DictReader(f, delimiter="\t")
-  for row in reader:
-    r = Row(
-      uri=row["uri"],
-      prompt=row["prompt"],
-      choice=row["choice"],
-      link=row["link"],
-      assist=row["assist"]
-    )
-    rows.append(r)
 
-groupedRows = {}
-for row in rows:
-  r = groupedRows.get(row.uri, [])
-  r.append(row)
-  groupedRows[row.uri] = r
+def parse_rows() -> List[Row]:
+    rows: List[Row] = []
+    with open("trees/evictions_tree.tsv") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for row in reader:
+            r = Row(
+                node_id=row["node"],
+                prompt=row["prompt"],
+                choice=row["choice"],
+                node_link=row["node_link"],
+                external_link=row["external_link"],
+                assist=row["assist"],
+            )
+            rows.append(r)
+    return rows
 
-output = dict()
-for (key, rows) in groupedRows.items():
-  cs = []
-  for row in rows:
-    cs.append({
-      "choiceText": row.choice,
-      "linksTo": h(row.link)
-    })
 
-  d = {
-    "id": h(rows[0].uri),
-    "promptText": rows[0].prompt,
-    "choices": cs
-  }
-  output[h(rows[0].uri)] = d
+def main() -> None:
+    rows: List[Row] = parse_rows()
+    groupedRows: Dict[NodeId, List[Row]] = {}
+    for row in rows:
+        r = groupedRows.get(row.node_id, [])
+        r.append(row)
+        groupedRows[row.node_id] = r
 
-print(json.dumps(output, indent=2))
+    output = dict()
+    for (key, rows) in groupedRows.items():
+        cs = []
+        for row in rows:
+            temp = {"choiceText": row.choice}
+            if row.node_link:
+                temp["linksTo"] = row.node_link
+            if row.external_link:
+                temp["linkOut"] = row.external_link
+            cs.append(temp)
+
+        d = {"id": rows[0].node_id, "promptText": rows[0].prompt, "choices": cs}
+        output[rows[0].node_id] = d
+
+    print(json.dumps(output, indent=2))
+
+
+if __name__ == "__main__":
+    main()

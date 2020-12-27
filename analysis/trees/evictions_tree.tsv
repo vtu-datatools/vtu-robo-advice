@@ -1,40 +1,40 @@
-uri	prompt	choice	link	assist	misc
-/contest/2	Have you received a written eviction notice?	Yes	/contest/3		
-/contest/2	Have you received a written eviction notice?	No	/contest/5	Your landlord is required by law to issue you a written eviction notice. Without written notice you eviction is not lawful. Please keep all copies of correspondances with your landlord and try and have a witness present whenever you interact with your landlord	
-/contest/3	Was it on the proper form?	Yes	/contest/30	Your landlord should use the proper form (http://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice)	
-/contest/3	Was it on the proper form?	No	/contest/6		
-/contest/5	Has your landlord tried to change your locks, threaten you, or harass you in any way?	No, but I think my landlord wants to evict me	Eviction Self Defence Handbook		
-/contest/5	Has your landlord tried to change your locks, threaten you, or harass you in any way?	Yes, I need to speak with an advocate right away!	Advocate Directory	If you are being harassed by the landlord you need to speak with an advocate as soon as possible!	
-/contest/6	Your notice is likely not lawful. Take some time to learn about your rights.	Next step: Know your rights!	https://tenants.bc.ca/resources/template-letters/	Take some steps to protect yourself	
-/contest/6	Your notice is likely not lawful. Take some time to learn about your rights.	Next Step: Write a Letter to Your Landlord	https://tenants.bc.ca/resources/template-letters/	You can write your landlord a letter explaining why what they did was unlawful. This is an opportunity to de-escalate and negotiate around the eviction	
-/contest/6	Your notice is likely not lawful. Take some time to learn about your rights.	Next Step: Find an advocate	Advocate Directory		
-/contest/7	Have more than 5 days passed since you received your eviction notice?	Yes	/contest/34	If you do not pay your rent back within 5 days of receiving an eviction notice for unpaid rent you can be legally evicted	
-/contest/7	Have more than 5 days passed since you received your eviction notice?	No	/contest/38		
-/contest/8	Have more than 10 days passed since you received notice?	No	/contest/35	Great you have a shot at this!	
-/contest/8	Have more than 10 days passed since you received notice?	Yes	/contest/34		
-/contest/9	Have more than 15 days passed since you received notice?	Yes	/contest/34		
-/contest/9	Have more than 15 days passed since you received notice?	No	/contest/44	You still have time to contest your eviction. You will need evidence and some time but we can help you fight!	
-/contest/29	Is your living situation covered by the Residential Tenancy Act?	Yes	/contest/2		
-/contest/29	Is your living situation covered by the Residential Tenancy Act?	No, I don't think so	/contest/43	Lots of housing situations are not covered by B.C's laws - these include most kinds of temporary situations where you dont have a lease, "transitional housing" , and situations where you share a kitchen or bathroom with the Landlord. See: http://tenants.bc.ca/am-i-covered-by-the-law/	
-/contest/30	What was the reason for your eviction?	I did not pay my rent or utilities in full and on time	/contest/31	Your landlord is saying that you did not pay rent, or that you were late to pay rent, or something along those lines	
-/contest/30	What was the reason for your eviction?	The eviction is related to something I am alleged to have done (i.e issues with noise, guests, etc)	/contest/32	Landlord's should give 30 days notice for evictions that are not rent related or 'no cause' evictions related to renovations.	
-/contest/30	What was the reason for your eviction?	I am being evicted for 'no fault'	/contest/33	This would include renovations, the landlord's family moving in, or building demolition	
-/contest/31	Were you given 10 Days Notice to Move Out?	No	/contest/6		
-/contest/31	Were you given 10 Days Notice to Move Out?	Yes	/contest/7		
-/contest/32	Were you given 30 Days Notice?	Yes	/contest/8		
-/contest/32	Were you given 30 Days Notice?	No	/contest/6	Your landlord must give you 30 days notice of an eviction. If they do not you do not have to move out.	
-/contest/33	Were you given 60 Days Notice?	Yes	/contest/9		
-/contest/33	Were you given 60 Days Notice?	No	/contest/6		
-/contest/34	It seems like you probably missed the window to contest your eviction.	Please take some time to report your landlord and sign a petition to help improve the law in B.C	https://tenants.bc.ca/resources/template-letters/		
-/contest/35	Did your landlord indicate what specifically you did wrong?	No	/contest/37	Your landlord should indicate why they are evicting you. A reason for eviction should be written on the notice to end tenancy.	
-/contest/35	Did your landlord indicate what specifically you did wrong?	Yes	/contest/36	Your landlord should indicate on the form what precisely you are being evicted for	
-/contest/36	Did your landlord give you a chance to address the issue?	Yes	https://tenants.bc.ca/resources/template-letters/	If you were told what the issue was and given a warning you should get the help of an advocate in contesting your eviction	
-/contest/36	Did your landlord give you a chance to address the issue?	No	/contest/39		
-/contest/37	Did your landlord ever give  you a formal warning?	Yes	https://tenants.bc.ca/resources/template-letters/	if your landlord gave you a written warning you will have to dispute the substance of your landlord's allegations	
-/contest/37	Did your landlord ever give  you a formal warning?	No	https://tenants.bc.ca/resources/template-letters/	Unless the allegations are very serious your landlord should give you a chance to make it right. This line of argument may not convince the arbitrator every time, but it can help.	
-/contest/38	Are you able to pay your rent in full within 5 days of receiving this notice?	Yes, I should pay my landlord immediately	https://tenants.bc.ca/resources/template-letters/	If you pay your landlord before 5 days pass you cannot be legally evicted	
-/contest/38	Are you able to pay your rent in full within 5 days of receiving this notice?	No, what are my options?	https://tenants.bc.ca/resources/template-letters/	Click through to learn more about your rights in this situation	
-/contest/39	Do you have evidence to counter your landlord's allegations?	Yes, I have a witness or evidence to support my version of events	https://tenants.bc.ca/resources/template-letters/	You want get far without some kind of evidence	
-/contest/43	If you are not covered by the RTA you will find it hard (but not impossible) to fight back.	Next Steps	/contest/fletter/../landing		
-/contest/44	Do you have evidence that the reason your landlord gave for your eviction is  misleading or untrue?	No	/contest/fletter/../landing	If you dont have any evidence that the landlord isn't acting in good faith you will have a hard time convincing an arbitrator to cancel your eviction.	
-/contest/44	Do you have evidence that the reason your landlord gave for your eviction is  misleading or untrue?	Yes	https://tenants.bc.ca/resources/template-letters/	For example, make sure the landlord has permits with the City (dial 311) for demolitions or renovations. Check for postings for the unit on craigslist. You'll need evidence to contest your eviction.	
+node	prompt	choice	node_link	external_link	assist	misc
+2	Have you received a written eviction notice?	Yes	3
+2	Have you received a written eviction notice?	No	5		Your landlord is required by law to issue you a written eviction notice. Without written notice you eviction is not lawful. Please keep all copies of correspondances with your landlord and try and have a witness present whenever you interact with your landlord
+3	Was it on the proper form?	Yes	30		Your landlord should use the proper form (http://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice)
+3	Was it on the proper form?	No	6
+5	Has your landlord tried to change your locks, threaten you, or harass you in any way?	No, but I think my landlord wants to evict me		Eviction Self Defence Handbook
+5	Has your landlord tried to change your locks, threaten you, or harass you in any way?	Yes, I need to speak with an advocate right away!		Advocate Directory	If you are being harassed by the landlord you need to speak with an advocate as soon as possible!
+6	Your notice is likely not lawful. Take some time to learn about your rights.	Next step: Know your rights!		https://tenants.bc.ca/resources/template-letters/	Take some steps to protect yourself
+6	Your notice is likely not lawful. Take some time to learn about your rights.	Next Step: Write a Letter to Your Landlord		https://tenants.bc.ca/resources/template-letters/	You can write your landlord a letter explaining why what they did was unlawful. This is an opportunity to de-escalate and negotiate around the eviction
+6	Your notice is likely not lawful. Take some time to learn about your rights.	Next Step: Find an advocate		Advocate Directory
+7	Have more than 5 days passed since you received your eviction notice?	Yes	34		If you do not pay your rent back within 5 days of receiving an eviction notice for unpaid rent you can be legally evicted
+7	Have more than 5 days passed since you received your eviction notice?	No	38
+8	Have more than 10 days passed since you received notice?	No	35		Great you have a shot at this!
+8	Have more than 10 days passed since you received notice?	Yes	34
+9	Have more than 15 days passed since you received notice?	Yes	34
+9	Have more than 15 days passed since you received notice?	No	44		You still have time to contest your eviction. You will need evidence and some time but we can help you fight!
+29	Is your living situation covered by the Residential Tenancy Act?	Yes	2
+29	Is your living situation covered by the Residential Tenancy Act?	No, I don't think so	43		Lots of housing situations are not covered by B.C's laws - these include most kinds of temporary situations where you dont have a lease, "transitional housing" , and situations where you share a kitchen or bathroom with the Landlord. See: http://tenants.bc.ca/am-i-covered-by-the-law/
+30	What was the reason for your eviction?	I did not pay my rent or utilities in full and on time	31		Your landlord is saying that you did not pay rent, or that you were late to pay rent, or something along those lines
+30	What was the reason for your eviction?	The eviction is related to something I am alleged to have done (i.e issues with noise, guests, etc)	32		Landlord's should give 30 days notice for evictions that are not rent related or 'no cause' evictions related to renovations.
+30	What was the reason for your eviction?	I am being evicted for 'no fault'	33		This would include renovations, the landlord's family moving in, or building demolition
+31	Were you given 10 Days Notice to Move Out?	No	6
+31	Were you given 10 Days Notice to Move Out?	Yes	7
+32	Were you given 30 Days Notice?	Yes	8
+32	Were you given 30 Days Notice?	No	6		Your landlord must give you 30 days notice of an eviction. If they do not you do not have to move out.
+33	Were you given 60 Days Notice?	Yes	9
+33	Were you given 60 Days Notice?	No	6
+34	It seems like you probably missed the window to contest your eviction.	Please take some time to report your landlord and sign a petition to help improve the law in B.C		https://tenants.bc.ca/resources/template-letters/
+35	Did your landlord indicate what specifically you did wrong?	No	37		Your landlord should indicate why they are evicting you. A reason for eviction should be written on the notice to end tenancy.
+35	Did your landlord indicate what specifically you did wrong?	Yes	36		Your landlord should indicate on the form what precisely you are being evicted for
+36	Did your landlord give you a chance to address the issue?	Yes		https://tenants.bc.ca/resources/template-letters/	If you were told what the issue was and given a warning you should get the help of an advocate in contesting your eviction
+36	Did your landlord give you a chance to address the issue?	No	39
+37	Did your landlord ever give  you a formal warning?	Yes		https://tenants.bc.ca/resources/template-letters/	if your landlord gave you a written warning you will have to dispute the substance of your landlord's allegations
+37	Did your landlord ever give  you a formal warning?	No		https://tenants.bc.ca/resources/template-letters/	Unless the allegations are very serious your landlord should give you a chance to make it right. This line of argument may not convince the arbitrator every time, but it can help.
+38	Are you able to pay your rent in full within 5 days of receiving this notice?	Yes, I should pay my landlord immediately		https://tenants.bc.ca/resources/template-letters/	If you pay your landlord before 5 days pass you cannot be legally evicted
+38	Are you able to pay your rent in full within 5 days of receiving this notice?	No, what are my options?		https://tenants.bc.ca/resources/template-letters/	Click through to learn more about your rights in this situation
+39	Do you have evidence to counter your landlord's allegations?	Yes, I have a witness or evidence to support my version of events		https://tenants.bc.ca/resources/template-letters/	You want get far without some kind of evidence
+43	If you are not covered by the RTA you will find it hard (but not impossible) to fight back.	Next Steps		/contest/fletter/../landing
+44	Do you have evidence that the reason your landlord gave for your eviction is  misleading or untrue?	No		/contest/fletter/../landing	If you dont have any evidence that the landlord isn't acting in good faith you will have a hard time convincing an arbitrator to cancel your eviction.
+44	Do you have evidence that the reason your landlord gave for your eviction is  misleading or untrue?	Yes		https://tenants.bc.ca/resources/template-letters/	For example, make sure the landlord has permits with the City (dial 311) for demolitions or renovations. Check for postings for the unit on craigslist. You'll need evidence to contest your eviction.

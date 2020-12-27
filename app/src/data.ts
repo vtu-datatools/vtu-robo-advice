@@ -1,293 +1,294 @@
 /* eslint-disable quote-props */
 import { Prompt, Prompts } from "./types"
 
-export const DEFAULT_PROMPT: Prompt =  {
+export const DEFAULT_PROMPT: Prompt = {
   id: "default",
   promptText: "FALLBACK PROMPT: DEBUGGING",
   choices: [
     {
       choiceText: "Back To Start",
-      linksTo: "46ed67"
+      linksTo: "2"
     }
   ]
 }
 
 export const PROMPTS: Prompts = {
   // Automatically Generated
-  "48d462": {
-    "id": "48d462",
+  "2": {
+    "id": "2",
     "promptText": "Have you received a written eviction notice?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "5968c1"
+        "linksTo": "3"
       },
       {
         "choiceText": "No",
-        "linksTo": "c4b94f"
+        "linksTo": "5"
       }
     ]
   },
-  "5968c1": {
-    "id": "5968c1",
+  "3": {
+    "id": "3",
     "promptText": "Was it on the proper form?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "f9b710"
+        "linksTo": "30"
       },
       {
         "choiceText": "No",
-        "linksTo": "e8884f"
+        "linksTo": "6"
       }
     ]
   },
-  "c4b94f": {
-    "id": "c4b94f",
+  "5": {
+    "id": "5",
     "promptText": "Has your landlord tried to change your locks, threaten you, or harass you in any way?",
     "choices": [
       {
         "choiceText": "No, but I think my landlord wants to evict me",
-        "linksTo": "e693fe"
+        "linkOut": "Eviction Self Defence Handbook"
       },
       {
         "choiceText": "Yes, I need to speak with an advocate right away!",
-        "linksTo": "160eff"
+        "linkOut": "Advocate Directory"
       }
     ]
   },
-  "e8884f": {
-    "id": "e8884f",
+  "6": {
+    "id": "6",
     "promptText": "Your notice is likely not lawful. Take some time to learn about your rights.",
     "choices": [
       {
         "choiceText": "Next step: Know your rights!",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       },
       {
         "choiceText": "Next Step: Write a Letter to Your Landlord",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       },
       {
         "choiceText": "Next Step: Find an advocate",
-        "linksTo": "160eff"
+        "linkOut": "Advocate Directory"
       }
     ]
   },
-  "203eef": {
-    "id": "203eef",
+  "7": {
+    "id": "7",
     "promptText": "Have more than 5 days passed since you received your eviction notice?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "81f00c"
+        "linksTo": "34"
       },
       {
         "choiceText": "No",
-        "linksTo": "31d16e"
+        "linksTo": "38"
       }
     ]
   },
-  "bf2da9": {
-    "id": "bf2da9",
+  "8": {
+    "id": "8",
     "promptText": "Have more than 10 days passed since you received notice?",
     "choices": [
       {
         "choiceText": "No",
-        "linksTo": "39f6b3"
+        "linksTo": "35"
       },
       {
         "choiceText": "Yes",
-        "linksTo": "81f00c"
+        "linksTo": "34"
       }
     ]
   },
-  "bc17bf": {
-    "id": "bc17bf",
+  "9": {
+    "id": "9",
     "promptText": "Have more than 15 days passed since you received notice?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "81f00c"
+        "linksTo": "34"
       },
       {
         "choiceText": "No",
-        "linksTo": "cba407"
+        "linksTo": "44"
       }
     ]
   },
-  "46ed67": {
-    "id": "46ed67",
+  "29": {
+    "id": "29",
     "promptText": "Is your living situation covered by the Residential Tenancy Act?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "48d462"
+        "linksTo": "2"
       },
       {
         "choiceText": "No, I don't think so",
-        "linksTo": "53fbd5"
+        "linksTo": "43"
       }
     ]
   },
-  "f9b710": {
-    "id": "f9b710",
+  "30": {
+    "id": "30",
     "promptText": "What was the reason for your eviction?",
     "choices": [
       {
         "choiceText": "I did not pay my rent or utilities in full and on time",
-        "linksTo": "7c8f86"
+        "linksTo": "31"
       },
       {
         "choiceText": "The eviction is related to something I am alleged to have done (i.e issues with noise, guests, etc)",
-        "linksTo": "e5c96d"
+        "linksTo": "32"
       },
       {
         "choiceText": "I am being evicted for 'no fault'",
-        "linksTo": "5c6b83"
+        "linksTo": "33"
       }
     ]
   },
-  "7c8f86": {
-    "id": "7c8f86",
+  "31": {
+    "id": "31",
     "promptText": "Were you given 10 Days Notice to Move Out?",
     "choices": [
       {
         "choiceText": "No",
-        "linksTo": "e8884f"
+        "linksTo": "6"
       },
       {
         "choiceText": "Yes",
-        "linksTo": "203eef"
+        "linksTo": "7"
       }
     ]
   },
-  "e5c96d": {
-    "id": "e5c96d",
+  "32": {
+    "id": "32",
     "promptText": "Were you given 30 Days Notice?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "bf2da9"
+        "linksTo": "8"
       },
       {
         "choiceText": "No",
-        "linksTo": "e8884f"
+        "linksTo": "6"
       }
     ]
   },
-  "5c6b83": {
-    "id": "5c6b83",
+  "33": {
+    "id": "33",
     "promptText": "Were you given 60 Days Notice?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "bc17bf"
+        "linksTo": "9"
       },
       {
         "choiceText": "No",
-        "linksTo": "e8884f"
+        "linksTo": "6"
       }
     ]
   },
-  "81f00c": {
-    "id": "81f00c",
+  "34": {
+    "id": "34",
     "promptText": "It seems like you probably missed the window to contest your eviction.",
     "choices": [
       {
         "choiceText": "Please take some time to report your landlord and sign a petition to help improve the law in B.C",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       }
     ]
   },
-  "39f6b3": {
-    "id": "39f6b3",
+  "35": {
+    "id": "35",
     "promptText": "Did your landlord indicate what specifically you did wrong?",
     "choices": [
       {
         "choiceText": "No",
-        "linksTo": "66943f"
+        "linksTo": "37"
       },
       {
         "choiceText": "Yes",
-        "linksTo": "317a95"
+        "linksTo": "36"
       }
     ]
   },
-  "317a95": {
-    "id": "317a95",
+  "36": {
+    "id": "36",
     "promptText": "Did your landlord give you a chance to address the issue?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       },
       {
         "choiceText": "No",
-        "linksTo": "5927ad"
+        "linksTo": "39"
       }
     ]
   },
-  "66943f": {
-    "id": "66943f",
+  "37": {
+    "id": "37",
     "promptText": "Did your landlord ever give  you a formal warning?",
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       },
       {
         "choiceText": "No",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       }
     ]
   },
-  "31d16e": {
-    "id": "31d16e",
+  "38": {
+    "id": "38",
     "promptText": "Are you able to pay your rent in full within 5 days of receiving this notice?",
     "choices": [
       {
         "choiceText": "Yes, I should pay my landlord immediately",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       },
       {
         "choiceText": "No, what are my options?",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       }
     ]
   },
-  "5927ad": {
-    "id": "5927ad",
+  "39": {
+    "id": "39",
     "promptText": "Do you have evidence to counter your landlord's allegations?",
     "choices": [
       {
         "choiceText": "Yes, I have a witness or evidence to support my version of events",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       }
     ]
   },
-  "53fbd5": {
-    "id": "53fbd5",
+  "43": {
+    "id": "43",
     "promptText": "If you are not covered by the RTA you will find it hard (but not impossible) to fight back.",
     "choices": [
       {
         "choiceText": "Next Steps",
-        "linksTo": "8ea549"
+        "linkOut": "/contest/fletter/../landing"
       }
     ]
   },
-  "cba407": {
-    "id": "cba407",
+  "44": {
+    "id": "44",
     "promptText": "Do you have evidence that the reason your landlord gave for your eviction is  misleading or untrue?",
     "choices": [
       {
         "choiceText": "No",
-        "linksTo": "8ea549"
+        "linkOut": "/contest/fletter/../landing"
       },
       {
         "choiceText": "Yes",
-        "linksTo": "fba94a"
+        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
       }
     ]
   }
 }
+
