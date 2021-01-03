@@ -29,4 +29,3 @@ with open("graphs/advice_repairs.dot", "w") as f:
 decision_tree_evictions = tree_rooted_at_uri("/contest/29", full_decision_tree)
 with open("graphs/advice_evictions.dot", "w") as f:
     f.write(decision_tree_to_dot(decision_tree_evictions))
-
