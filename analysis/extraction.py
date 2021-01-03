@@ -1,3 +1,4 @@
+from typing import List
 from bs4 import BeautifulSoup
 
 from models import DecisionNode, ChoiceEdge
@@ -21,7 +22,7 @@ def process_choice(raw_choice) -> ChoiceEdge:
         assist = as_[1].attrs["data-content"].strip()
     return ChoiceEdge(decision, link, assist)
 
-def extract() -> [DecisionNode]:
+def extract() -> List[DecisionNode]:
     decision_nodes = []
     for i in range (1, 45):
         with open(data_path.format(i), 'r') as f:

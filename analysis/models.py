@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import Optional
+from typing import List, Optional
+
 
 @dataclass
 class ChoiceEdge:
@@ -7,8 +8,9 @@ class ChoiceEdge:
     link: str
     assist: Optional[str]
 
+
 @dataclass
 class DecisionNode:
     uri: str
     prompt: str
-    choices: list[ChoiceEdge]
+    choices: List[ChoiceEdge]

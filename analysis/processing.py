@@ -1,7 +1,11 @@
+from typing import List
 from extraction import extract
 from models import DecisionNode
 
-def tree_rooted_at_uri(uri: str, decision_tree: [DecisionNode]) -> [DecisionNode]:
+
+def tree_rooted_at_uri(
+    uri: str, decision_tree: List[DecisionNode]
+) -> List[DecisionNode]:
     decision_node_dict = dict(map(lambda dn: (dn.uri, dn), decision_tree))
     to_include = [uri]
     included_nodes = set()
@@ -14,6 +18,7 @@ def tree_rooted_at_uri(uri: str, decision_tree: [DecisionNode]) -> [DecisionNode
             to_include.extend(children)
 
     return list(filter(lambda dn: dn.uri in included_nodes, decision_tree))
+
 
 if __name__ == "__main__":
     decision_tree = extract()
