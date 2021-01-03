@@ -8,17 +8,22 @@ export interface Props {
 }
 
 export const Choice: FunctionComponent<Props> = (
-  { choice }: Props
+  { choice: { choiceText, linksTo, linkOut } }: Props
 ) => {
-  return <div>
-    <Link href={`/${choice.linksTo}`}>
-      <div className="
-        text-base font-light
-        rounded px-2 py-2
-        text-gray-200 bg-blue-700
-        hover:text-gray-100 hover:bg-blue-600">
-          {choice.choiceText}
-      </div>
-    </Link>
-  </div>
+  const c =
+    <div className="
+      text-base font-light
+      rounded px-2 py-2
+      text-gray-200 bg-blue-700
+      hover:text-gray-100 hover:bg-blue-600">
+      {choiceText}
+    </div>
+
+  if (linksTo) {
+    return <Link href={`/${linksTo}`} >{c}</Link >
+  } else if (linkOut) {
+    return <a href={linkOut}>{c}</a>
+  }
+  return <Link>{c}</Link>
+
 }

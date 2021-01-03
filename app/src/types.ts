@@ -4,6 +4,7 @@ export interface Choice {
   choiceText: string,
   tooltip?: string
   linksTo?: PromptId
+  linkOut?: string
 }
 
 export interface Prompt {
