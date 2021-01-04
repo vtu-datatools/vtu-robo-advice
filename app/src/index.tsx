@@ -24,12 +24,14 @@ const App: FunctionalComponent = () => {
           </Router>
         </div>
         <div class="flex justify-center">
-          <div className="
-            text-base text-center
-            rounded px-2 py-2 w-1/5
-            text-gray-200 bg-blue-900">
+          <a
+            href="/"
+            className="
+              text-base text-center
+              rounded px-2 py-2 w-1/5
+              text-gray-200 bg-blue-900">
             Back To Start
-          </div>
+          </a>
         </div>
       </div>
     </div>
