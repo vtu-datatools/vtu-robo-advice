@@ -20,9 +20,9 @@ export const Choice: FunctionComponent<Props> = (
     </div>
 
   if (linksTo) {
-    return <Link href={`/${linksTo}`} >{c}</Link >
+    return <Link href={`/${linksTo}`}>{c}</Link >
   } else if (linkOut) {
-    return <a href={linkOut}>{c}</a>
+    return <a href={linkOut} target="_blank" rel="noreferrer">{c}</a>
   }
   return <Link>{c}</Link>
 
