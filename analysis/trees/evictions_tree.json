@@ -1,19 +1,4 @@
-/* eslint-disable quote-props */
-import { Prompt, Prompts } from "./types"
-
-export const DEFAULT_PROMPT: Prompt = {
-  id: "default",
-  promptText: "FALLBACK PROMPT: DEBUGGING",
-  choices: [
-    {
-      choiceText: "Back To Start",
-      linksTo: "rta"
-    }
-  ]
-}
-
-export const PROMPTS: Prompts = {
-  // Automatically Generated
+{
   "rta": {
     "id": "rta",
     "promptText": "Is your living situation covered by the Residential Tenancy Act?",

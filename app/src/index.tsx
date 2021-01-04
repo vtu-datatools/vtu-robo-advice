@@ -19,7 +19,7 @@ const App: FunctionalComponent = () => {
         <div className="text-2xl text-center pb-2">Navigate Your Eviction</div>
         <div className="pb-2">
           <Router>
-            <Route<PromptProps> path="/" component={Prompt} prompts={PROMPTS} promptId="2" />
+            <Route<PromptProps> path="/" component={Prompt} prompts={PROMPTS} promptId="rta" />
             <Route<PromptProps> path="/:promptId" component={Prompt} prompts={PROMPTS} fallbackPrompt={DEFAULT_PROMPT} />
           </Router>
         </div>
