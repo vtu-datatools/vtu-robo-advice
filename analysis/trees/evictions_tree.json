@@ -29,12 +29,15 @@
   },
   "no-rta": {
     "id": "no-rta",
-    "promptText": "If you are not covered by the RTA you will find it hard (but not impossible) to fight back.",
+    "promptText": "If you are not covered by the RTA you will find it hard (but not impossible) to fight back. The following organizations may be able to assist you.",
     "choices": [
       {
-        "choiceText": "Next Steps",
-        "linksTo": "todo",
-        "linkOut": "/contest/fletter/../landing"
+        "choiceText": "BC Access Pro Bono",
+        "linkOut": "https://accessprobono.ca/get-legal-help"
+      },
+      {
+        "choiceText": "Community Legal Assistance Society ",
+        "linkOut": "https://clasbc.net/get-legal-help/losing-your-housing/"
       }
     ]
   },
@@ -111,12 +114,12 @@
         "linksTo": "30-days-notice"
       },
       {
-        "choiceText": "I am being evicted for 'no fault'",
-        "linksTo": "60-days-notice"
-      },
-      {
         "choiceText": "I am being demovicted/renovicted",
         "linksTo": "contact-the-vtu"
+      },
+      {
+        "choiceText": "I am being evicted for 'no fault'",
+        "linksTo": "60-days-notice"
       }
     ]
   },
@@ -268,13 +271,25 @@
     "choices": [
       {
         "choiceText": "Yes",
-        "linksTo": "todo",
-        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
+        "linksTo": "bad-faith-defence"
       },
       {
         "choiceText": "No",
-        "linksTo": "todo",
-        "linkOut": "/contest/fletter/../landing"
+        "linksTo": "self-defence"
+      }
+    ]
+  },
+  "defend-yourself": {
+    "id": "defend-yourself",
+    "promptText": "If you think you have a case to dispute your eviction or your landlord's claims, you'll need to file a dispute with the Residential Tenancy Branch.",
+    "choices": [
+      {
+        "choiceText": "Know Your Right",
+        "linksTo": "self-defence"
+      },
+      {
+        "choiceText": "Find an Advocate",
+        "linksTo": "find-an-advocate"
       }
     ]
   },
@@ -283,9 +298,12 @@
     "promptText": "Do you have evidence to counter your landlord's allegations?",
     "choices": [
       {
-        "choiceText": "Yes, I have a witness or evidence to support my version of events",
-        "linksTo": "todo",
-        "linkOut": "https://tenants.bc.ca/resources/template-letters/"
+        "choiceText": "Yes, I have documentation and/or a willing witness that can provide a statement to support my version of events.",
+        "linksTo": "defend-yourself"
+      },
+      {
+        "choiceText": "No",
+        "linksTo": "self-defence"
       }
     ]
   },
@@ -295,7 +313,7 @@
     "choices": [
       {
         "choiceText": "VTU: Eviction Self-Defence Handbook",
-        "linkOut": "https://d3n8a8pro7vhmx.cloudfront.net/vancouvertenantsunion/pages/13/attachments/original/1564010297/EVICT_handbook_WEB_2019_Update.pdf?1564010297"
+        "linkOut": "https://www.vancouvertenantsunion.ca/eviction_defense_handbook"
       }
     ]
   },
@@ -325,7 +343,7 @@
     "choices": [
       {
         "choiceText": "VTU: Advocate Resource",
-        "linksTo": "todo"
+        "linkOut": "https://www.vancouvertenantsunion.ca/advocate_directory"
       }
     ]
   },
@@ -341,11 +359,19 @@
   },
   "missed-contestation-window": {
     "id": "missed-contestation-window",
-    "promptText": "It seems like you probably missed the window to contest your eviction.",
+    "promptText": "It seems like you probably missed the window to contest your eviction. To be sure, you could try contacting a legal advocate and/or reading about your rights.",
     "choices": [
       {
-        "choiceText": "Please take some time to report your landlord and sign a petition to help improve the law in B.C",
-        "linksTo": "todo"
+        "choiceText": "Know Your Rights",
+        "linksTo": "self-defence"
+      },
+      {
+        "choiceText": "Find an Advocate",
+        "linksTo": "find-an-advocate"
+      },
+      {
+        "choiceText": "Please take some time to report your landlord here.",
+        "linkOut": "https://www.vancouvertenantsunion.ca/evictions"
       }
     ]
   },
