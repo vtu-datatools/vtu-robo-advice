@@ -2,6 +2,7 @@ import { h, FunctionComponent } from "preact"
 import { PromptId, Prompt as PromptT, Prompts } from "../types"
 
 import { Choice } from "./Choice"
+import { Explainer } from "./Explainer"
 
 export interface Props {
   promptId: PromptId
@@ -14,6 +15,7 @@ export const Prompt: FunctionComponent<Props> = (
 ) => {
   const promptExists: boolean = Object.prototype.hasOwnProperty.call(prompts, promptId)
   const prompt: PromptT = promptExists ? prompts[promptId] : fallbackPrompt
+  const explainer = prompt.explainer
 
   return <div>
     <h2 className="text-lg font-bold">{prompt.prompt}</h2>
@@ -22,5 +24,6 @@ export const Prompt: FunctionComponent<Props> = (
         <Choice choice={choice} />
       </li>
     )}</ul>
+    {explainer && <Explainer explainer={explainer} />}
   </div>
 }
