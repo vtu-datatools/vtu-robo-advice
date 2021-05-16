@@ -16,7 +16,7 @@ export const Prompt: FunctionComponent<Props> = (
   const prompt: PromptT = promptExists ? prompts[promptId] : fallbackPrompt
 
   return <div>
-    <h2 className="text-lg font-bold">{prompt.promptText}</h2>
+    <h2 className="text-lg font-bold">{prompt.prompt}</h2>
     <ul>{prompt.choices.map(choice =>
       <li className="pt-2">
         <Choice choice={choice} />

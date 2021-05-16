@@ -8,7 +8,7 @@ export interface Props {
 }
 
 export const Choice: FunctionComponent<Props> = (
-  { choice: { choiceText, linksTo, linkOut } }: Props
+  { choice: { choice, link } }: Props
 ) => {
   const c =
     <div className="
@@ -16,14 +16,11 @@ export const Choice: FunctionComponent<Props> = (
       rounded px-2 py-2
       text-gray-200 bg-blue-700
       hover:text-gray-100 hover:bg-blue-600">
-      {choiceText}
+      {choice}
     </div>
 
-  if (linksTo) {
-    return <Link href={`/${linksTo}`}>{c}</Link >
-  } else if (linkOut) {
-    return <a href={linkOut} target="_blank" rel="noreferrer">{c}</a>
+  if ("internal" in link) {
+    return <Link href={`/${link.internal}`}>{c}</Link>
   }
-  return <Link>{c}</Link>
-
+  return <a href={link.external} target="_blank" rel="noreferrer">{c}</a>
 }

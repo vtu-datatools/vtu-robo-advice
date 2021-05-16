@@ -1,19 +1,31 @@
+export type Prompts = Record<PromptId, Prompt>
 export type PromptId = string
-
-export interface Choice {
-  choiceText: string,
-  tooltip?: string
-  linksTo?: PromptId
-  linkOut?: string
-}
+export type URL = string
 
 export interface Prompt {
-  id: PromptId
-  promptText: string,
-  choices: Choice[]
+  id: PromptId,
+  prompt: string,
+  explainer?: Explainer,
+  choices: Choice[],
 }
 
-// TODO: Use a Map<PromptId, Prompt> here. Slightly complicates the generation of data.ts
-export type Prompts = Record<PromptId, Prompt>
+export interface Explainer {
+  text: string,
+  link: URL,
+}
 
-export type Unit = Record<string, never>
+export interface Choice {
+  choice: string,
+  link: Link,
+  tooltip?: string,
+}
+
+type Link = ExternalLink | InternalLink
+
+interface ExternalLink {
+  external: URL,
+}
+
+interface InternalLink {
+  internal: PromptId,
+}
