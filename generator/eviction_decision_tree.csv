@@ -1,0 +1,58 @@
+checked,node_id,explainer,explainer_link,prompt,choice,node_link,external_link,notes,,assist
+ ,rta,,,Is your living situation covered by the Residential Tenancy Act?,Yes,written-notice,,,,
+,,,,,I'm not sure,am-I-covered,,,,
+,,,,,No,no-rta,,,,
+,am-I-covered,,,Use the following resource to determine if you are covered by the Residential Tenancy Act.,TRAC: Am I Covered by the RTA,,https://tenants.bc.ca/your-tenancy/am-i-covered-by-the-law/,,,
+,no-rta,,,If you are not covered by the RTA you will find it hard (but not impossible) to fight back. The following organizations may be able to assist you.,BC Access Pro Bono,,https://accessprobono.ca/get-legal-help,,,
+,,,,,Community Legal Assistance Society ,,https://clasbc.net/get-legal-help/losing-your-housing/,,,
+,written-notice,Your landlord is required by law to issue you a written eviction notice. Without written notice you eviction is not lawful. Please keep all copies of correspondences with your landlord and try and have a witness present whenever you interact with your landlord.,https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/during-a-tenancy/serving-notices-during-tenancy,Have you received a written eviction notice?,Yes,proper-form,,,,
+,,,,,No,harassment,,,,
+,harassment,,,"Has your landlord tried to change your locks, threaten you, or harass you in any way?","Yes, I need to speak with an advocate right away!",find-an-advocate,,,,
+,,,,,"No, but I think my landlord wants to evict me.",self-defence,,,,
+,proper-form,"Notices must be in writing, signed and dated. They must contain the address of the rental unit, the date the notices takes effect and a reason for the notice. In addition, the notice should be on the proper form found on the Residential Tenancy Branch website.",https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice,Were you given a proper eviction notice?,Yes,reason-for-eviction,,,,
+,,,,,No,unlawful-notice,,,,
+,unlawful-notice,,,Your notice is likely not lawful. Take some time to learn about your rights.,Next Step: Know Your Rights!,self-defence,,,,
+,,,,,Next Step: Write a Letter to Your Landlord,illegal-eviction,,,,
+,,,,,Next Step: Find an Advocate,find-an-advocate,,,,
+,reason-for-eviction,"Your landlord must give a reason for your eviction. The specific reason given will determine how much notice they must give you, and how much time you have to contest the eviction.
+",https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice,What was the reason for your eviction?,I did not pay my rent or utilities in full and on time,10-days-to-move-out,,,,
+,,,,,"The eviction is related to something I am alleged to have done
+(eg. issues with noise, guests, etc)",30-days-notice,,,,
+,,,,,I am being demovicted/renovicted,contact-the-vtu,,,,
+,,,,,"I am being evicted for 'no fault'
+(eg. eviction for landlord use)",60-days-notice,,,,
+,10-days-to-move-out,Evictions for unpaid rent or utilities requires 10 days of notice.,https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice,Were you given 10 days notice to move out?,Yes,5-days-since-notice,,,,
+,,,,,No,unlawful-notice,,,,
+,5-days-since-notice,"When given 10 days of notice, you have 5 days to pay any owed amount or dispute the eviction.",https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice,Have more than 5 days passed since you received your eviction notice?,Yes,missed-contestation-window,,,,
+,,,,,No,able-to-pay-rent,,,,
+,able-to-pay-rent,Your notice is cancelled and you can continue your tenancy if you pay all rent and utilities owing within five days of receiving the notice.,https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/during-a-tenancy/paying-rent,Are you able to pay your rent in full within 5 days of receiving this notice?,"Yes, I should pay my landlord immediately.",,https://tenants.bc.ca/your-tenancy/evictions/#ten-day-eviction-for-non-payment-of-rent,,,
+,,,,,"No, what are my options?",find-an-advocate,,,,
+,30-days-notice,For cause' evictions usually require 1 month of notice. ,https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice/one-month-notice,Were you given 1 months notice to move out?,Yes,10-days-since-notice,,,,
+,,,,,No,unlawful-notice,,,,
+,10-days-since-notice,"When given 1 month of notice, you have 10 days to dispute the eviction.",https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy/landlord-notice,Have more than 10 days passed since you received notice?,Yes,missed-contestation-window,,,,
+,,,,,No,specific-cause,,,,
+,specific-cause,,,Did your landlord indicate what specifically you did wrong?,Yes,chance-to-address,,,,Your landlord should indicate on the form what precisely you are being evicted for
+,,,,,No,formal-warning,,,,Your landlord should indicate why they are evicting you. A reason for eviction should be written on the notice to end tenancy.
+,formal-warning,,,Did your landlord ever give you a formal warning?,Yes,todo,https://tenants.bc.ca/resources/template-letters/,Not sure what letter this should go to.,,if your landlord gave you a written warning you will have to dispute the substance of your landlord's allegations
+,,,,,No,todo,https://tenants.bc.ca/resources/template-letters/,Not sure what letter this should go to. ,,"Unless the allegations are very serious your landlord should give you a chance to make it right. This line of argument may not convince the arbitrator every time, but it can help."
+,chance-to-address,,,Did your landlord give you a chance to address the issue?,Yes,todo,https://tenants.bc.ca/resources/template-letters/,Not sure where this should go.,,If you were told what the issue was and given a warning you should get the help of an advocate in contesting your eviction
+,,,,,No,evidence,,,,
+,60-days-notice,,,Were you given 2 months notice to move out?,Yes,15-days-since-notice,,,,
+,,,,,No,unlawful-notice,,,,
+,15-days-since-notice,,,Have more than 15 days passed since you received notice?,Yes,missed-contestation-window,,,,
+,,,,,No,bad-faith,,,,You still have time to contest your eviction. You will need evidence and some time but we can help you fight!
+,bad-faith,,,Do you have evidence that the reason your landlord gave for your eviction is misleading or untrue?,Yes,defend-yourself,,Updated: 2020/01/10,,"For example, make sure the landlord has permits with the City (dial 311) for demolitions or renovations. Check for postings for the unit on craigslist. You'll need evidence to contest your eviction."
+,,,,,No,self-defence,,Updated: 2020/01/10,,If you don't have any evidence that the landlord isn't acting in good faith you will have a hard time convincing an arbitrator to cancel your eviction.
+,defend-yourself,,,"If you think you have a case to dispute your eviction or your landlord's claims, you'll need to file a dispute with the Residential Tenancy Branch.",Know Your Right,self-defence,,,,
+,,,,,Find an Advocate,find-an-advocate,,,,
+,evidence,,,Do you have evidence to counter your landlord's allegations?,"Yes, I have documentation and/or a willing witness that can provide a statement to support my version of events.",defend-yourself,,Updated: 2020/01/10,,You want get far without some kind of evidence
+,,,,,No,self-defence,,Added: 2020/01/10,,
+,self-defence,,,Learn your tenant rights with the following resource from the Vancouver Tenants Union (VTU).,VTU: Eviction Self-Defence Handbook,,https://www.vancouvertenantsunion.ca/eviction_defense_handbook,Updated: 2021-03-07,,
+,get-landlord-info,,,Use the following form letter from the Tenant Resource & Advisory Center (TRAC) to determine your landlord's information.,TRAC: Landlord's Legal Name and Address,,https://tenants.bc.ca/resources/template-letters/,,,
+,illegal-eviction,,,Use the following form letter from the Tenant Resource & Advisory Center (TRAC) to dispute your eviction.,TRAC: Illegal Eviction Notice,,https://tenants.bc.ca/resources/template-letters/,,,
+,find-an-advocate,,,The following resource can help you find an advocate.,Advocate Resource,,https://www.vancouvertenantsunion.ca/advocate_directory,Updated: 2021-03-07,,
+,contact-the-vtu,,,Use the following resource to contact the VTU,VTU: Contact,,https://www.vancouvertenantsunion.ca/contact,,,
+,missed-contestation-window,,,"It seems like you probably missed the window to contest your eviction. To be sure, you could try contacting a legal advocate and/or reading about your rights.",Know Your Rights,self-defence,,Updated: 2020/01/10,,
+,,,,,Find an Advocate,find-an-advocate,,,,
+,,,,,Please take some time to report your landlord here.,,https://www.vancouvertenantsunion.ca/evictions,Updated: 2020/01/10,,
+,todo,,,What should this do?,Return to Start,rta,,Eliminate These,,
