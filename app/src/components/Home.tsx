@@ -12,16 +12,17 @@ const home = (
       It does not constitute legal advice.
     </div>
     <div className="flex justify-center">
-      <button
+      <Link
+        href={`/${ROOT}`}
         className="
           text-base text-center
           rounded px-1 py-2 w-2/5
-        text-gray-200 bg-blue-700
-        hover:text-gray-100 hover:bg-blue-600
+          text-gray-200 bg-blue-700
+          hover:text-gray-100 hover:bg-blue-600
         "
       >
-        <Link href={`/${ROOT}`}>Navigate Your Eviction</Link>
-      </button>
+        Navigate Your Eviction
+      </Link>
     </div>
     <h1 className="text-2xl pt-4">References</h1>
     This resource is based on information from the following sources. Please
