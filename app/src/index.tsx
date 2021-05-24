@@ -1,10 +1,11 @@
-import "tailwindcss/tailwind.css"
-import { h, FunctionalComponent } from "preact"
-import { Route, Router } from 'preact-router';
+import "tailwindcss/tailwind.css";
+import { h, FunctionalComponent } from "preact";
+import { Route, Router } from "preact-router";
 
 import { PROMPTS, DEFAULT_PROMPT } from "./data";
 
-import { Prompt, Props as PromptProps } from "./components/Prompt"
+import { Prompt, Props as PromptProps } from "./components/Prompt";
+import { Home } from "./components/Home";
 
 const App: FunctionalComponent = () => {
   return (
@@ -12,30 +13,25 @@ const App: FunctionalComponent = () => {
       <header
         className="
           px-4 py-3 bg-blue-900 shadow-xl
-          text-3xl text-gray-100">
-        VTU - Tenant Advice
+          text-3xl text-gray-100"
+      >
+        <a href="/">VTU - Tenant Advice</a>
       </header>
-      <div className="h-screen px-8 py-2 bg-blue-400">
-        <div className="text-2xl text-center pb-2">Navigate Your Eviction</div>
+      <div className="h-screen px-8 py-2">
         <div className="pb-2">
           <Router>
-            <Route<PromptProps> path="/" component={Prompt} prompts={PROMPTS} promptId="rta" />
-            <Route<PromptProps> path="/:promptId" component={Prompt} prompts={PROMPTS} fallbackPrompt={DEFAULT_PROMPT} />
+            <Route<PromptProps> path="/" component={Home} />
+            <Route<PromptProps>
+              path="/:promptId"
+              component={Prompt}
+              prompts={PROMPTS}
+              fallbackPrompt={DEFAULT_PROMPT}
+            />
           </Router>
-        </div>
-        <div class="flex justify-center">
-          <a
-            href="/"
-            className="
-              text-base text-center
-              rounded px-2 py-2 w-1/5
-              text-gray-200 bg-blue-900">
-            Back To Start
-          </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
