@@ -1,18 +1,12 @@
-/* eslint-disable quote-props */
-import { Prompt } from "./types"
-import { PROMPTS } from "./generated-data"
+import { Prompt } from "./types";
+import { PROMPTS } from "./generated-data";
+
+export const ROOT = "rta";
 
 export const DEFAULT_PROMPT: Prompt = {
   id: "default",
-  prompt: "FALLBACK PROMPT: DEBUGGING",
-  choices: [
-    {
-      choice: "Back To Start",
-      link: {
-        internal: "rta"
-      }
-    }
-  ]
-}
+  prompt: "This page does not exist",
+  choices: [],
+};
 
-export { PROMPTS }
+export { PROMPTS };
