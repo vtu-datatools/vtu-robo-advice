@@ -30,7 +30,7 @@ const home = (
       <ul className="list-disc">
         <li>
           <a
-            href="https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies"
+            href="https://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies/ending-a-tenancy"
             className="text-blue-900 hover:underline"
           >
             BC Government - Residential Tenancies
