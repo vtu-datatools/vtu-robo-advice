@@ -65,6 +65,16 @@ const home = (
         https://tenants-talk.ca/contest
       </a>
     </div>
+    <div>
+      <h1 className="text-2xl pt-4">Feedback</h1>
+      If you have any feedback, please reach out to:&nbsp;
+      <a
+        href="mailto:vtu.datatools@gmail.com"
+        className="text-blue-900 hover:underline"
+      >
+        vtu.datatools@gmail.com
+      </a>
+    </div>
   </div>
 );
 
